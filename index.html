@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+       <div class="container">
+          <div class="box">
+               <header class="signup-header">
+                <h1>Signup</h1>
+               </header>
+               <main class="signup-body">
+                   <form  action="#">
+                       <p>
+                          <lebel for="name">Ful Name</lebel>
+                          <input id="name" type="text" placeholder="Type name here" >   <!--required pattern="/^[A-Z a-z]*\s{1}[A-Z a-z]*$/"/ -->
+                          <i class="fa-solid "></i>
+                          <span id="nameError"></span>
+                        </p>
+                       <p>
+                        <lebel for="email">Email</lebel>
+                        <input id="email" type="email" placeholder="xyz@gmail.com" >
+                        <i class="fa-solid"></i>
+                        <span id="emailError"></span>
+                    </p>
+                     <p>
+                        <lebel for="password">Password</lebel>
+                         <input id="password" type="password" placeholder="at least 8 characters" ><!--required min="8" max="30" -->
+                         <i class="fa-solid"></i>
+                         <span id="passwordError"></span>
+                        
+                     </p>
+
+                     <p>
+                        <input type="submit" value="Create Account" id="submitBtn">
+                     </p>
+                   </form>
+               </main>
+               <footer class="signup-footer">
+                   <p>Already have an account ? <a href="#">Login</a></p>
+               </footer>
+          </div>
+       </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
